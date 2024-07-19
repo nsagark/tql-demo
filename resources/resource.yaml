@@ -8,7 +8,7 @@ spec:
   hostPID: true
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -18,7 +18,7 @@ spec:
   hostIPC: true
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -28,7 +28,7 @@ spec:
   hostNetwork: true
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -40,7 +40,7 @@ spec:
   hostNetwork: true
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 ###### Pods - Good
 apiVersion: v1
@@ -50,7 +50,7 @@ metadata:
 spec:
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -60,7 +60,7 @@ spec:
   hostPID: false
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -70,7 +70,7 @@ spec:
   hostIPC: false
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -80,7 +80,7 @@ spec:
   hostNetwork: false
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 apiVersion: v1
 kind: Pod
@@ -92,7 +92,7 @@ spec:
   hostNetwork: false
   containers:
   - name: container01
-    image: dummyimagename
+    image: nginx:latest
 ---
 ###### Deployments - Bad
 apiVersion: apps/v1
@@ -112,7 +112,7 @@ spec:
       hostPID: true
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -131,7 +131,7 @@ spec:
       hostIPC: true
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -150,7 +150,7 @@ spec:
       hostNetwork: true
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -171,7 +171,7 @@ spec:
       hostNetwork: true
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 ###### Deployments - Good
 apiVersion: apps/v1
@@ -190,7 +190,7 @@ spec:
     spec:
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -209,7 +209,7 @@ spec:
       hostPID: false
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -228,7 +228,7 @@ spec:
       hostIPC: false
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -247,7 +247,7 @@ spec:
       hostNetwork: false
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -268,7 +268,7 @@ spec:
       hostNetwork: false
       containers:
       - name: container01
-        image: dummyimagename
+        image: nginx:latest
 ---
 ###### CronJobs - Bad
 apiVersion: batch/v1
@@ -285,7 +285,7 @@ spec:
           hostPID: true
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -301,7 +301,7 @@ spec:
           hostIPC: true
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -317,7 +317,7 @@ spec:
           hostNetwork: true
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -335,7 +335,7 @@ spec:
           hostNetwork: true
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 ###### CronJobs - Good
 apiVersion: batch/v1
@@ -351,7 +351,7 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -367,7 +367,7 @@ spec:
           hostPID: false
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -383,7 +383,7 @@ spec:
           hostIPC: false
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -399,7 +399,7 @@ spec:
           hostNetwork: false
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
 ---
 apiVersion: batch/v1
 kind: CronJob
@@ -417,4 +417,4 @@ spec:
           hostNetwork: false
           containers:
           - name: container01
-            image: dummyimagename
+            image: nginx:latest
